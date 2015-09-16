@@ -7,17 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58C7A35523AB04219FA35841 /* Hotel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C7A1FD8324050D131C3A90 /* Hotel.m */; };
+		58C7A48138C0F6CFDCF2E8BE /* APIRequest+Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C7A05EABA1C0B175E2ABEA /* APIRequest+Factory.m */; };
+		58C7A7BEFBA039699A07EDDB /* APIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C7A0FF95349184C49506C7 /* APIRequest.m */; };
+		58C7AABE047BEE964B69A185 /* APIResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C7A5FBB4B43E68BFD090B6 /* APIResponseSerializer.m */; };
 		AC6F09561BA94FED00431736 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6F09551BA94FED00431736 /* main.m */; };
 		AC6F09591BA94FED00431736 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6F09581BA94FED00431736 /* AppDelegate.m */; };
 		AC6F095C1BA94FED00431736 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6F095B1BA94FED00431736 /* ViewController.m */; };
 		AC6F095F1BA94FED00431736 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6F095D1BA94FED00431736 /* Main.storyboard */; };
 		AC6F09611BA94FED00431736 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6F09601BA94FED00431736 /* Assets.xcassets */; };
 		AC6F09641BA94FED00431736 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6F09621BA94FED00431736 /* LaunchScreen.storyboard */; };
+		AC6F09711BA9564000431736 /* RequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6F09701BA9564000431736 /* RequestOperationManager.m */; settings = {ASSET_TAGS = (); }; };
 		BF37B1EC4D29FA848571EB25 /* libPods-HotelsTestProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D3400F82EFB703B26F40EE /* libPods-HotelsTestProject.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		53F2E6BDA81B46483F0200FB /* Pods-HotelsTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotelsTestProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotelsTestProject/Pods-HotelsTestProject.release.xcconfig"; sourceTree = "<group>"; };
+		58C7A05EABA1C0B175E2ABEA /* APIRequest+Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "APIRequest+Factory.m"; sourceTree = "<group>"; };
+		58C7A0FF95349184C49506C7 /* APIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIRequest.m; sourceTree = "<group>"; };
+		58C7A1FD8324050D131C3A90 /* Hotel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hotel.m; sourceTree = "<group>"; };
+		58C7A5FBB4B43E68BFD090B6 /* APIResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIResponseSerializer.m; sourceTree = "<group>"; };
+		58C7A65CD0B86373AB5ADBCD /* APIRequest+Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "APIRequest+Factory.h"; sourceTree = "<group>"; };
+		58C7A88204BAC1F9392A08BA /* Hotel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hotel.h; sourceTree = "<group>"; };
+		58C7AEC9DD1FEFCBCACD6905 /* APIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIRequest.h; sourceTree = "<group>"; };
+		58C7AF58AD4039FF9FDCB398 /* APIResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIResponseSerializer.h; sourceTree = "<group>"; };
 		AC6F09511BA94FED00431736 /* HotelsTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotelsTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6F09551BA94FED00431736 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC6F09571BA94FED00431736 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,6 +41,8 @@
 		AC6F09601BA94FED00431736 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC6F09631BA94FED00431736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC6F09651BA94FED00431736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC6F096F1BA9564000431736 /* RequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestOperationManager.h; sourceTree = "<group>"; };
+		AC6F09701BA9564000431736 /* RequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestOperationManager.m; sourceTree = "<group>"; };
 		E1EFE635456B2257C8B1BD44 /* Pods-HotelsTestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotelsTestProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotelsTestProject/Pods-HotelsTestProject.debug.xcconfig"; sourceTree = "<group>"; };
 		F8D3400F82EFB703B26F40EE /* libPods-HotelsTestProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HotelsTestProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -51,6 +66,15 @@
 				53F2E6BDA81B46483F0200FB /* Pods-HotelsTestProject.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		58C7AA07BC9D120F51BF1090 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				58C7A1FD8324050D131C3A90 /* Hotel.m */,
+				58C7A88204BAC1F9392A08BA /* Hotel.h */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		63A5DC339E7D52D05A5DFCF1 /* Frameworks */ = {
@@ -82,15 +106,12 @@
 		AC6F09531BA94FED00431736 /* HotelsTestProject */ = {
 			isa = PBXGroup;
 			children = (
-				AC6F09571BA94FED00431736 /* AppDelegate.h */,
-				AC6F09581BA94FED00431736 /* AppDelegate.m */,
-				AC6F095A1BA94FED00431736 /* ViewController.h */,
-				AC6F095B1BA94FED00431736 /* ViewController.m */,
-				AC6F095D1BA94FED00431736 /* Main.storyboard */,
-				AC6F09601BA94FED00431736 /* Assets.xcassets */,
-				AC6F09621BA94FED00431736 /* LaunchScreen.storyboard */,
-				AC6F09651BA94FED00431736 /* Info.plist */,
+				AC6F096E1BA9537A00431736 /* Networking */,
+				AC6F096D1BA9536D00431736 /* Application */,
+				AC6F096B1BA9534F00431736 /* Controllers */,
+				AC6F096C1BA9536400431736 /* Resources */,
 				AC6F09541BA94FED00431736 /* Supporting Files */,
+				58C7AA07BC9D120F51BF1090 /* Models */,
 			);
 			path = HotelsTestProject;
 			sourceTree = "<group>";
@@ -101,6 +122,50 @@
 				AC6F09551BA94FED00431736 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC6F096B1BA9534F00431736 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC6F095A1BA94FED00431736 /* ViewController.h */,
+				AC6F095B1BA94FED00431736 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AC6F096C1BA9536400431736 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC6F095D1BA94FED00431736 /* Main.storyboard */,
+				AC6F09601BA94FED00431736 /* Assets.xcassets */,
+				AC6F09621BA94FED00431736 /* LaunchScreen.storyboard */,
+				AC6F09651BA94FED00431736 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AC6F096D1BA9536D00431736 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				AC6F09571BA94FED00431736 /* AppDelegate.h */,
+				AC6F09581BA94FED00431736 /* AppDelegate.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		AC6F096E1BA9537A00431736 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AC6F096F1BA9564000431736 /* RequestOperationManager.h */,
+				AC6F09701BA9564000431736 /* RequestOperationManager.m */,
+				58C7A0FF95349184C49506C7 /* APIRequest.m */,
+				58C7AEC9DD1FEFCBCACD6905 /* APIRequest.h */,
+				58C7A5FBB4B43E68BFD090B6 /* APIResponseSerializer.m */,
+				58C7AF58AD4039FF9FDCB398 /* APIResponseSerializer.h */,
+				58C7A05EABA1C0B175E2ABEA /* APIRequest+Factory.m */,
+				58C7A65CD0B86373AB5ADBCD /* APIRequest+Factory.h */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,8 +274,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC6F095C1BA94FED00431736 /* ViewController.m in Sources */,
+				AC6F09711BA9564000431736 /* RequestOperationManager.m in Sources */,
 				AC6F09591BA94FED00431736 /* AppDelegate.m in Sources */,
 				AC6F09561BA94FED00431736 /* main.m in Sources */,
+				58C7A7BEFBA039699A07EDDB /* APIRequest.m in Sources */,
+				58C7AABE047BEE964B69A185 /* APIResponseSerializer.m in Sources */,
+				58C7A35523AB04219FA35841 /* Hotel.m in Sources */,
+				58C7A48138C0F6CFDCF2E8BE /* APIRequest+Factory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

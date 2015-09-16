@@ -10,7 +10,7 @@
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{   NSStringFromSelector(@selector(hotelID)): @"id",
                 NSStringFromSelector(@selector(hotelName)): @"name",
-                NSStringFromSelector(@selector(hotelAddress)): @"addres",
+                NSStringFromSelector(@selector(hotelAddress)): @"address",
                 NSStringFromSelector(@selector(hotelStars)): @"stars",
                 NSStringFromSelector(@selector(distance)): @"distance",
                 NSStringFromSelector(@selector(suitesAvailable)): @"suites_availability" };

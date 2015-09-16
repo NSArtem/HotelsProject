@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HotelTableViewCell.h
 //  HotelsTestProject
 //
 //  Created by Artem Abramov on 16/09/15.
@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HotelsViewController : UIViewController
+@class Hotel;
+
+@interface HotelTableViewCell : UITableViewCell
+
+- (void)configureWithModel:(Hotel *)model;
 
 @end
-

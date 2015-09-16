@@ -47,32 +47,32 @@
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="125.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="__Name__" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqM-7d-zVN">
-                                                    <rect key="frame" x="8" y="8" width="304" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__Name__" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqM-7d-zVN">
+                                                    <rect key="frame" x="8" y="8" width="271" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="__address__" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Byr-1g-2zV">
-                                                    <rect key="frame" x="8" y="36" width="304" height="16"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__address__" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Byr-1g-2zV">
+                                                    <rect key="frame" x="8" y="35.5" width="271" height="16"/>
                                                     <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="★★★★★" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymp-w5-efe">
-                                                    <rect key="frame" x="8" y="57" width="85" height="21"/>
+                                                    <rect key="frame" x="8" y="56.5" width="85" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="__distance__" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boy-Qm-Pdz">
-                                                    <rect key="frame" x="229" y="61" width="74.5" height="16"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__distance__" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boy-Qm-Pdz">
+                                                    <rect key="frame" x="196.5" y="60" width="74.5" height="16"/>
                                                     <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1, 2, 3, 4, 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJ9-RM-uUl">
-                                                    <rect key="frame" x="245" y="85" width="67" height="16"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1, 2, 3, 4, 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJ9-RM-uUl">
+                                                    <rect key="frame" x="212" y="85" width="67" height="16"/>
                                                     <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -110,6 +110,7 @@
                                             <outlet property="hotelDistanceLabel" destination="boy-Qm-Pdz" id="HlZ-Jg-0Ep"/>
                                             <outlet property="hotelNameLabel" destination="iqM-7d-zVN" id="NgW-DO-YV0"/>
                                             <outlet property="hotelStarsLabel" destination="Ymp-w5-efe" id="cUe-p1-8jt"/>
+                                            <segue destination="w2y-Ag-uRg" kind="push" id="9bw-0Q-HTD"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -128,7 +129,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Hotels" id="KcI-aZ-boG">
-                        <barButtonItem key="backBarButtonItem" title="&lt;" id="GCM-jE-l2d"/>
                         <barButtonItem key="rightBarButtonItem" title="Sort" id="Eyi-Sq-fHN">
                             <connections>
                                 <action selector="sortButtonPressed:" destination="Bwd-AR-n7X" id="HNd-eH-amm"/>
@@ -142,6 +142,126 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5he-hI-0qh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="527" y="176"/>
+        </scene>
+        <!--Hotel-->
+        <scene sceneID="1fk-d7-Leo">
+            <objects>
+                <viewController id="w2y-Ag-uRg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sol-5e-RKS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qk3-DC-d7A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V6t-AB-HeI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D0W-WB-7Vk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__HOTEL_NAME__" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Aw-S0-CGP">
+                                        <rect key="frame" x="86" y="16" width="148" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="dU3-om-KyM">
+                                        <rect key="frame" x="0.0" y="63" width="320" height="128"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__address__" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OrM-Fa-8UT">
+                                        <rect key="frame" x="21" y="215" width="71" height="16"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__rating__" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlq-X4-E3l">
+                                        <rect key="frame" x="253" y="251" width="58.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__suites__" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6Q-ee-Xn3">
+                                        <rect key="frame" x="252" y="287" width="59" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__distance__" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9Z-Om-IYr">
+                                        <rect key="frame" x="21" y="251" width="74.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available suites:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSF-Es-YVZ">
+                                        <rect key="frame" x="21" y="287" width="97" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TvY-sx-b8r">
+                                        <rect key="frame" x="21" y="338" width="71" height="30"/>
+                                        <state key="normal" title="Open map"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s75-i8-upf">
+                                        <rect key="frame" x="21" y="382" width="290" height="496.5"/>
+                                        <mutableString key="text">The Hotel Hesperia is the right choice for visitors who are searching for a combination of charm, peace and quiet, and a convenient position from which to explore Venice. It is a small, comfortable hotel, situated on the Canale di Cannaregio. The Deria family and their staff offer an attentive, personalized service and are always available to offer any help to guests.
+
+The hotel is arranged on three floors, without a lift. On the ground floor, apart from the reception, there is a comfortable lounge where you can sit and drink tea, or just read. There is also a splendid terrace, where, you can relax and immerge yourself from morning onwards in the atmosphere of Venetian daily life, watching the city travelling about by water and people gathering together and filling the alleyways and little squares with their chatter.
+
+The rooms are arranged on the first, second and third floors. On the top floor, there is also a delightful terrace or solarium available for the use of guests, from where you can enjoy the wonderful view.
+
+The buffet breakfast is served in the lounge on the ground floor, and also outside on our little patio during the summer months.
+
+The hotel provides an internet point, and a Wi-Fi service is available for an additional fee.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="OrM-Fa-8UT" firstAttribute="top" secondItem="dU3-om-KyM" secondAttribute="bottom" constant="24" id="0Jp-ec-tOh"/>
+                                    <constraint firstAttribute="trailing" secondItem="dU3-om-KyM" secondAttribute="trailing" id="0uq-9t-sfX"/>
+                                    <constraint firstItem="FSF-Es-YVZ" firstAttribute="leading" secondItem="OrM-Fa-8UT" secondAttribute="leading" id="3y7-fq-6h0"/>
+                                    <constraint firstItem="FSF-Es-YVZ" firstAttribute="leading" secondItem="O9Z-Om-IYr" secondAttribute="leading" id="5EP-c7-dda"/>
+                                    <constraint firstItem="2Aw-S0-CGP" firstAttribute="top" secondItem="D0W-WB-7Vk" secondAttribute="top" constant="16" id="9c3-U7-yKw"/>
+                                    <constraint firstItem="zlq-X4-E3l" firstAttribute="baseline" secondItem="O9Z-Om-IYr" secondAttribute="baseline" id="BDi-vx-PM1"/>
+                                    <constraint firstItem="FSF-Es-YVZ" firstAttribute="top" secondItem="O9Z-Om-IYr" secondAttribute="bottom" constant="20" id="ON3-qN-4jM"/>
+                                    <constraint firstItem="f6Q-ee-Xn3" firstAttribute="baseline" secondItem="FSF-Es-YVZ" secondAttribute="baseline" id="OkG-Gv-u0o"/>
+                                    <constraint firstItem="O9Z-Om-IYr" firstAttribute="top" secondItem="OrM-Fa-8UT" secondAttribute="bottom" constant="20" id="R3O-QY-TbL"/>
+                                    <constraint firstItem="dU3-om-KyM" firstAttribute="top" secondItem="2Aw-S0-CGP" secondAttribute="bottom" constant="26" id="S57-ZH-Yy6"/>
+                                    <constraint firstItem="OrM-Fa-8UT" firstAttribute="leading" secondItem="D0W-WB-7Vk" secondAttribute="leading" constant="21" id="WpA-fL-fe3"/>
+                                    <constraint firstAttribute="bottom" secondItem="s75-i8-upf" secondAttribute="bottom" constant="16" id="Y13-n8-vPp"/>
+                                    <constraint firstItem="2Aw-S0-CGP" firstAttribute="centerX" secondItem="D0W-WB-7Vk" secondAttribute="centerX" id="YOt-1c-aaK"/>
+                                    <constraint firstAttribute="trailing" secondItem="zlq-X4-E3l" secondAttribute="trailing" constant="8" id="c9c-b5-7Pz"/>
+                                    <constraint firstItem="s75-i8-upf" firstAttribute="top" secondItem="TvY-sx-b8r" secondAttribute="bottom" constant="14" id="h1l-en-sBW"/>
+                                    <constraint firstItem="s75-i8-upf" firstAttribute="leading" secondItem="TvY-sx-b8r" secondAttribute="leading" id="kvz-ds-6Bk"/>
+                                    <constraint firstItem="dU3-om-KyM" firstAttribute="leading" secondItem="D0W-WB-7Vk" secondAttribute="leading" id="mq1-f0-ahl"/>
+                                    <constraint firstItem="TvY-sx-b8r" firstAttribute="leading" secondItem="FSF-Es-YVZ" secondAttribute="leading" id="sS9-kg-pRy"/>
+                                    <constraint firstItem="s75-i8-upf" firstAttribute="trailing" secondItem="f6Q-ee-Xn3" secondAttribute="trailing" id="vdk-uf-c96"/>
+                                    <constraint firstItem="f6Q-ee-Xn3" firstAttribute="trailing" secondItem="zlq-X4-E3l" secondAttribute="trailing" id="yNM-oe-rl9"/>
+                                    <constraint firstItem="TvY-sx-b8r" firstAttribute="top" secondItem="FSF-Es-YVZ" secondAttribute="bottom" constant="35" id="yuE-EJ-fBy"/>
+                                </constraints>
+                            </scrollView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="B8o-ag-C1Y">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="D0W-WB-7Vk" firstAttribute="top" secondItem="V6t-AB-HeI" secondAttribute="topMargin" id="DJ0-I6-MYx"/>
+                            <constraint firstItem="B8o-ag-C1Y" firstAttribute="centerX" secondItem="V6t-AB-HeI" secondAttribute="centerX" id="Lqv-Ba-dgg"/>
+                            <constraint firstItem="dU3-om-KyM" firstAttribute="width" secondItem="V6t-AB-HeI" secondAttribute="width" id="NjG-k5-7Jc"/>
+                            <constraint firstItem="Qk3-DC-d7A" firstAttribute="top" secondItem="D0W-WB-7Vk" secondAttribute="bottom" id="WLD-Zc-KKp"/>
+                            <constraint firstItem="B8o-ag-C1Y" firstAttribute="centerY" secondItem="V6t-AB-HeI" secondAttribute="centerY" id="cm9-mo-tBC"/>
+                            <constraint firstItem="D0W-WB-7Vk" firstAttribute="leading" secondItem="V6t-AB-HeI" secondAttribute="leading" id="qmZ-nw-LcV"/>
+                            <constraint firstAttribute="trailing" secondItem="D0W-WB-7Vk" secondAttribute="trailing" id="tkW-Dp-WED"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hotel" id="TgG-sy-ApL"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2v4-XP-IaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946" y="176"/>
         </scene>
     </scenes>
 </document>

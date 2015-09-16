@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58C7A1BE67B1F3CE53F5147A /* HotelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C7A79169BBCC3DE21B5965 /* HotelViewController.m */; };
+		58C7A310C2DEE8FC4837C09F /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C7AAF485D7F5C2A29A6728 /* LoadingViewController.m */; };
 		58C7A35523AB04219FA35841 /* Hotel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C7A1FD8324050D131C3A90 /* Hotel.m */; };
 		58C7A48138C0F6CFDCF2E8BE /* APIRequest+Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C7A05EABA1C0B175E2ABEA /* APIRequest+Factory.m */; };
+		58C7A74914DE3FBFD8FB5AE4 /* NSString+Rating.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C7A8D80E1075EAB58EF313 /* NSString+Rating.m */; };
 		58C7A7BEFBA039699A07EDDB /* APIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C7A0FF95349184C49506C7 /* APIRequest.m */; };
 		58C7AABE047BEE964B69A185 /* APIResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C7A5FBB4B43E68BFD090B6 /* APIResponseSerializer.m */; };
 		AC6F09561BA94FED00431736 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6F09551BA94FED00431736 /* main.m */; };
@@ -25,13 +28,19 @@
 /* Begin PBXFileReference section */
 		53F2E6BDA81B46483F0200FB /* Pods-HotelsTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotelsTestProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotelsTestProject/Pods-HotelsTestProject.release.xcconfig"; sourceTree = "<group>"; };
 		58C7A05EABA1C0B175E2ABEA /* APIRequest+Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "APIRequest+Factory.m"; sourceTree = "<group>"; };
+		58C7A0CF97CC692D0E280BA9 /* NSString+Rating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Rating.h"; sourceTree = "<group>"; };
 		58C7A0FF95349184C49506C7 /* APIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIRequest.m; sourceTree = "<group>"; };
 		58C7A1FD8324050D131C3A90 /* Hotel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hotel.m; sourceTree = "<group>"; };
+		58C7A40CC7893C1719F2D3C5 /* LoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
 		58C7A5FBB4B43E68BFD090B6 /* APIResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIResponseSerializer.m; sourceTree = "<group>"; };
 		58C7A65CD0B86373AB5ADBCD /* APIRequest+Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "APIRequest+Factory.h"; sourceTree = "<group>"; };
+		58C7A79169BBCC3DE21B5965 /* HotelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelViewController.m; sourceTree = "<group>"; };
 		58C7A88204BAC1F9392A08BA /* Hotel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hotel.h; sourceTree = "<group>"; };
+		58C7A8D80E1075EAB58EF313 /* NSString+Rating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Rating.m"; sourceTree = "<group>"; };
+		58C7AAF485D7F5C2A29A6728 /* LoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
 		58C7AEC9DD1FEFCBCACD6905 /* APIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIRequest.h; sourceTree = "<group>"; };
 		58C7AF58AD4039FF9FDCB398 /* APIResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIResponseSerializer.h; sourceTree = "<group>"; };
+		58C7AF66BF5C795D42767D2C /* HotelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelViewController.h; sourceTree = "<group>"; };
 		AC6F09511BA94FED00431736 /* HotelsTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotelsTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6F09551BA94FED00431736 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC6F09571BA94FED00431736 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,6 +78,15 @@
 				53F2E6BDA81B46483F0200FB /* Pods-HotelsTestProject.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		58C7A67A3016981398CC2D68 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				58C7A8D80E1075EAB58EF313 /* NSString+Rating.m */,
+				58C7A0CF97CC692D0E280BA9 /* NSString+Rating.h */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		58C7AA07BC9D120F51BF1090 /* Models */ = {
@@ -116,6 +134,7 @@
 				AC6F096C1BA9536400431736 /* Resources */,
 				AC6F09541BA94FED00431736 /* Supporting Files */,
 				58C7AA07BC9D120F51BF1090 /* Models */,
+				58C7A67A3016981398CC2D68 /* Categories */,
 			);
 			path = HotelsTestProject;
 			sourceTree = "<group>";
@@ -133,6 +152,10 @@
 			children = (
 				AC6F095A1BA94FED00431736 /* ViewController.h */,
 				AC6F095B1BA94FED00431736 /* ViewController.m */,
+				58C7A79169BBCC3DE21B5965 /* HotelViewController.m */,
+				58C7AF66BF5C795D42767D2C /* HotelViewController.h */,
+				58C7AAF485D7F5C2A29A6728 /* LoadingViewController.m */,
+				58C7A40CC7893C1719F2D3C5 /* LoadingViewController.h */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -296,6 +319,9 @@
 				58C7AABE047BEE964B69A185 /* APIResponseSerializer.m in Sources */,
 				58C7A35523AB04219FA35841 /* Hotel.m in Sources */,
 				58C7A48138C0F6CFDCF2E8BE /* APIRequest+Factory.m in Sources */,
+				58C7A1BE67B1F3CE53F5147A /* HotelViewController.m in Sources */,
+				58C7A310C2DEE8FC4837C09F /* LoadingViewController.m in Sources */,
+				58C7A74914DE3FBFD8FB5AE4 /* NSString+Rating.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

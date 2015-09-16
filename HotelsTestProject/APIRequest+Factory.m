@@ -15,4 +15,16 @@
                                   method:@"GET"];
 }
 
++ (instancetype)requestOfHotel:(NSNumber *)hotelID
+{
+    if (!hotelID) {
+        return nil;
+    }
+
+    NSString *path = [NSString stringWithFormat:@"u/109052005/1/%@.json", hotelID.stringValue];
+    return [self requestWithResourceName:path
+                           responseClass:[Hotel class]
+                                  method:@"GET"];
+}
+
 @end

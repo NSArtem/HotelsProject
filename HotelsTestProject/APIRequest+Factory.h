@@ -12,5 +12,6 @@
  * u/109052005/1/0777.json
  */
 + (instancetype)requestOfHotelsList;
++ (instancetype)requestOfHotel:(NSNumber *)hotelID;
 
 @end

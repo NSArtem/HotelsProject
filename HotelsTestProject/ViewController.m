@@ -10,15 +10,13 @@
 #import "RequestOperationManager.h"
 #import "APIRequest+Factory.h"
 #import "HotelTableViewCell.h"
+#import "HotelViewController.h"
 
-@interface HotelsViewController ()<UITableViewDataSource>
+@interface HotelsViewController ()<UITableViewDataSource, UITableViewDelegate>
 
-@property(nonatomic, assign) BOOL isLoaded;
 @property(nonatomic, retain) AFHTTPRequestOperation *operation;
 @property(nonatomic, copy) NSArray *hotels;
-@property(nonatomic, strong) UIActivityIndicatorView *activityIndicatorView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property(nonatomic, strong) UILabel *errorMessage;
 
 @end
 
@@ -28,13 +26,6 @@
     [super viewDidLoad];
     self.tableView.estimatedRowHeight = 125.0;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
-
-    UIActivityIndicatorView *activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    [self.view addSubview:activityIndicatorView];
-    self.activityIndicatorView = activityIndicatorView;
-
-    UILabel *errorMessage = [[UILabel alloc] init];
-    [self.view addSubview:errorMessage];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -46,6 +37,7 @@
             self.isLoaded = YES;
             [self showLoadingIndicator:NO];
             [self showErrorMessage:NO message:nil];
+            self.operation = nil;
             [self.tableView reloadData];
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
             NSLog(@"Failed to fetch hotels list: %@", error.localizedDescription);
@@ -58,39 +50,6 @@
     }
 }
 
-- (void)viewDidLayoutSubviews {
-    [super viewDidLayoutSubviews];
-    self.activityIndicatorView.center = self.view.center;
-    [self.errorMessage sizeThatFits:self.view.bounds.size];
-    self.errorMessage.center = self.view.center;
-}
-
-
-- (void)showLoadingIndicator:(BOOL)isLoading
-{
-    self.tableView.hidden = isLoading;
-    self.activityIndicatorView.hidden = !isLoading;
-    if (isLoading) {
-        [self.activityIndicatorView startAnimating];
-    } else {
-        [self.activityIndicatorView stopAnimating];
-    }
-}
-
-- (void)showErrorMessage:(BOOL)isShown message:(NSString *)message
-{
-    self.errorMessage.hidden = !isShown;
-    self.tableView.hidden = isShown;
-    if (message.length) {
-        self.errorMessage.text = message;
-    }
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     HotelTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:NSStringFromClass([HotelTableViewCell class]) forIndexPath:indexPath];
     [cell configureWithModel:self.hotels[(NSUInteger)indexPath.row]];
@@ -101,7 +60,17 @@
     return self.hotels.count;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    HotelViewController *vc = [self.navigationController.storyboard instantiateViewControllerWithIdentifier:@"HotelViewController"];
+    Hotel *hotel = self.hotels[indexPath.row];
+    vc.hotel = hotel;
+    [self.navigationController pushViewController:vc animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+
 - (IBAction)sortButtonPressed:(id)sender {
+    //TODO: implement sorting
 }
 
 @end

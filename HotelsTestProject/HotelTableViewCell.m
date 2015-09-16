@@ -8,6 +8,7 @@
 
 #import "HotelTableViewCell.h"
 #import "Hotel.h"
+#import "NSString+Rating.h"
 
 @interface HotelTableViewCell()
 
@@ -25,14 +26,7 @@
 {
     self.hotelNameLabel.text = hotel.hotelName.length ? hotel.hotelName : @"—";
     self.hotelAddressLabel.text = hotel.hotelAddress.length ? hotel.hotelAddress : @"—";
-
-    if (hotel.hotelStars && hotel.hotelStars.integerValue > 0) {
-        NSUInteger stars = (hotel.hotelStars.integerValue <= 10) ? hotel.hotelStars.integerValue : 10;
-        self.hotelStarsLabel.text = [@"" stringByPaddingToLength:stars withString:@"★" startingAtIndex:0];
-    } else {
-        self.hotelStarsLabel.text = @"Rating unavailable";
-    }
-
+    self.hotelStarsLabel.text = [NSString ratingForNumber:hotel.hotelStars];
     self.hotelDistanceLabel.text = hotel.distance ? [NSString stringWithFormat:@"%@ km", hotel.distance] : @"";
     self.availableSuitesLabel.text = hotel.suitesAvailable.length ? hotel.suitesAvailable : @"No suites available";
 }

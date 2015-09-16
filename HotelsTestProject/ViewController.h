@@ -6,9 +6,10 @@
 //  Copyright © 2015 Artem Abramov. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
+#import "LoadingViewController.h"
 
-@interface HotelsViewController : UIViewController
+@interface HotelsViewController : LoadingViewController
 
 @end
 

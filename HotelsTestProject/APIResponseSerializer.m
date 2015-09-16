@@ -49,6 +49,9 @@
         }
     }  else {
         NSLog(@"JSON object is incorrect: %@", responseObject);
+        *error = [NSError errorWithDomain:NSStringFromClass([self class])
+                                     code:-1
+                                 userInfo:@{NSLocalizedDescriptionKey : @"JSON object is incorrect"}];
         return nil;
     }
     return nil;

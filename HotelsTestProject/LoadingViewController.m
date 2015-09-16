@@ -24,6 +24,7 @@
 
     UILabel *errorMessage = [[UILabel alloc] init];
     [self.view addSubview:errorMessage];
+    self.errorMessage = errorMessage;
 }
 
 - (void)viewDidLayoutSubviews {
@@ -50,6 +51,8 @@
     self.contentView.hidden = isShown;
     if (message.length) {
         self.errorMessage.text = message;
+        [self.errorMessage sizeToFit];
+        [self.view setNeedsLayout];
     }
 }
 

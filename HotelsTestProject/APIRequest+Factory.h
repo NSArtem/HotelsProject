@@ -13,5 +13,6 @@
  */
 + (instancetype)requestOfHotelsList;
 + (instancetype)requestOfHotel:(NSNumber *)hotelID;
++ (instancetype)requestOfImage:(NSString *)imageURLPath;
 
 @end

@@ -13,6 +13,7 @@
                 NSStringFromSelector(@selector(hotelAddress)): @"address",
                 NSStringFromSelector(@selector(hotelStars)): @"stars",
                 NSStringFromSelector(@selector(distance)): @"distance",
+                NSStringFromSelector(@selector(imageURLPath)): @"image",
                 NSStringFromSelector(@selector(suitesAvailable)): @"suites_availability" };
 }
 

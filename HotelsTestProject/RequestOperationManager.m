@@ -48,6 +48,7 @@ static NSString * const kBaseURL = @"https://dl.dropboxusercontent.com";
         if (failure) {
             failure(nil, error);
         }
+        return nil;
     }
     NSString *urlString = [[NSURL URLWithString:request.resourceName relativeToURL:self.baseURL] absoluteString];
     NSError *error = nil;
@@ -60,7 +61,16 @@ static NSString * const kBaseURL = @"https://dl.dropboxusercontent.com";
                                                         success:success
                                                         failure:failure];
 
-    operation.responseSerializer = [APIResponseSerializer serializerWithModelClass:request.responseClass];
+    switch (request.requestType) {
+        case JSON: {
+            operation.responseSerializer = [APIResponseSerializer serializerWithModelClass:request.responseClass];
+            break;
+        }
+        case Image: {
+            operation.responseSerializer = [AFImageResponseSerializer serializer];
+            break;
+        }
+    }
     return operation;
 }
 

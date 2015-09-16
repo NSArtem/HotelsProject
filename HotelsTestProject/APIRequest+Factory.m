@@ -6,7 +6,6 @@
 #import "APIRequest+Factory.h"
 #import "Hotel.h"
 
-
 @implementation APIRequest (Factory)
 
 + (instancetype)requestOfHotelsList {
@@ -25,6 +24,19 @@
     return [self requestWithResourceName:path
                            responseClass:[Hotel class]
                                   method:@"GET"];
+}
+
++ (instancetype)requestOfImage:(NSString *)imageURLPath;{
+    if (!imageURLPath.length) {
+        return nil;
+    }
+
+    NSString *path = [NSString stringWithFormat:@"u/109052005/1/%@", imageURLPath];
+    APIRequest *request = [self requestWithResourceName:path
+                                          responseClass:nil
+                                                 method:@"GET"];
+    request.requestType = Image;
+    return request;
 }
 
 @end

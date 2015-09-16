@@ -13,6 +13,7 @@
         self.resourceName = resourceName;
         self.responseClass = responseClass;
         self.method = method;
+        self.requestType = JSON;
     }
 
     return self;

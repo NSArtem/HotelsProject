@@ -5,6 +5,10 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger, RequestType) {
+    JSON,
+    Image
+};
 
 @interface APIRequest : NSObject
 
@@ -12,6 +16,7 @@
 @property (nonatomic, copy) NSString *resourceName;
 @property (nonatomic, strong) Class responseClass;
 @property (nonatomic, copy) NSString *method;
+@property (nonatomic, assign) RequestType requestType;
 
 - (instancetype)initWithResourceName:(NSString *)resourceName responseClass:(Class)responseClass method:(NSString *)method;
 + (instancetype)requestWithResourceName:(NSString *)resourceName responseClass:(Class)responseClass method:(NSString *)method;

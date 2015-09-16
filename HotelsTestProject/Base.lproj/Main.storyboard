@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -176,46 +177,57 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="dU3-om-KyM">
-                                        <rect key="frame" x="0.0" y="63" width="320" height="128"/>
-                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QpQ-ST-RHs">
+                                        <rect key="frame" x="0.0" y="63" width="320" height="0.0"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" id="Zhf-EC-Mh8"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OiX-nb-Oed">
+                                        <rect key="frame" x="0.0" y="303" width="253" height="0.0"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" id="at6-yL-X92"/>
+                                        </constraints>
+                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__address__" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OrM-Fa-8UT">
-                                        <rect key="frame" x="21" y="215" width="71" height="16"/>
+                                        <rect key="frame" x="21" y="327" width="71" height="16"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__rating__" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlq-X4-E3l">
-                                        <rect key="frame" x="253" y="251" width="58.5" height="16"/>
+                                        <rect key="frame" x="253" y="363" width="58.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__suites__" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6Q-ee-Xn3">
-                                        <rect key="frame" x="252" y="287" width="59" height="16"/>
+                                        <rect key="frame" x="252" y="399" width="59" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__distance__" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9Z-Om-IYr">
-                                        <rect key="frame" x="21" y="251" width="74.5" height="16"/>
+                                        <rect key="frame" x="21" y="363" width="74.5" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available suites:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSF-Es-YVZ">
-                                        <rect key="frame" x="21" y="287" width="97" height="16"/>
+                                        <rect key="frame" x="21" y="399" width="97" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TvY-sx-b8r">
-                                        <rect key="frame" x="21" y="338" width="71" height="30"/>
+                                        <rect key="frame" x="21" y="450" width="71" height="30"/>
                                         <state key="normal" title="Open map"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s75-i8-upf">
-                                        <rect key="frame" x="21" y="382" width="290" height="496.5"/>
-                                        <mutableString key="text">The Hotel Hesperia is the right choice for visitors who are searching for a combination of charm, peace and quiet, and a convenient position from which to explore Venice. It is a small, comfortable hotel, situated on the Canale di Cannaregio. The Deria family and their staff offer an attentive, personalized service and are always available to offer any help to guests.
+                                        <rect key="frame" x="21" y="494" width="290" height="496.5"/>
+                                        <string key="text">The Hotel Hesperia is the right choice for visitors who are searching for a combination of charm, peace and quiet, and a convenient position from which to explore Venice. It is a small, comfortable hotel, situated on the Canale di Cannaregio. The Deria family and their staff offer an attentive, personalized service and are always available to offer any help to guests.
 
 The hotel is arranged on three floors, without a lift. On the ground floor, apart from the reception, there is a comfortable lounge where you can sit and drink tea, or just read. There is also a splendid terrace, where, you can relax and immerge yourself from morning onwards in the atmosphere of Venetian daily life, watching the city travelling about by water and people gathering together and filling the alleyways and little squares with their chatter.
 
@@ -223,41 +235,58 @@ The rooms are arranged on the first, second and third floors. On the top floor, 
 
 The buffet breakfast is served in the lounge on the ground floor, and also outside on our little patio during the summer months.
 
-The hotel provides an internet point, and a Wi-Fi service is available for an additional fee.</mutableString>
+The hotel provides an internet point, and a Wi-Fi service is available for an additional fee.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="dU3-om-KyM">
+                                        <rect key="frame" x="0.0" y="63" width="320" height="240"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="dU3-om-KyM" secondAttribute="height" multiplier="4:3" id="kWd-bL-NHH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="eo4-bU-cGz">
+                                        <rect key="frame" x="292" y="275" width="20" height="20"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="OrM-Fa-8UT" firstAttribute="top" secondItem="dU3-om-KyM" secondAttribute="bottom" constant="24" id="0Jp-ec-tOh"/>
                                     <constraint firstAttribute="trailing" secondItem="dU3-om-KyM" secondAttribute="trailing" id="0uq-9t-sfX"/>
                                     <constraint firstItem="FSF-Es-YVZ" firstAttribute="leading" secondItem="OrM-Fa-8UT" secondAttribute="leading" id="3y7-fq-6h0"/>
                                     <constraint firstItem="FSF-Es-YVZ" firstAttribute="leading" secondItem="O9Z-Om-IYr" secondAttribute="leading" id="5EP-c7-dda"/>
+                                    <constraint firstItem="zlq-X4-E3l" firstAttribute="leading" secondItem="OiX-nb-Oed" secondAttribute="trailing" id="87O-Ti-f3n"/>
                                     <constraint firstItem="2Aw-S0-CGP" firstAttribute="top" secondItem="D0W-WB-7Vk" secondAttribute="top" constant="16" id="9c3-U7-yKw"/>
                                     <constraint firstItem="zlq-X4-E3l" firstAttribute="baseline" secondItem="O9Z-Om-IYr" secondAttribute="baseline" id="BDi-vx-PM1"/>
+                                    <constraint firstItem="OiX-nb-Oed" firstAttribute="top" secondItem="dU3-om-KyM" secondAttribute="bottom" id="DML-V1-c3z"/>
+                                    <constraint firstItem="dU3-om-KyM" firstAttribute="top" secondItem="QpQ-ST-RHs" secondAttribute="bottom" id="HmE-Wn-s62"/>
                                     <constraint firstItem="FSF-Es-YVZ" firstAttribute="top" secondItem="O9Z-Om-IYr" secondAttribute="bottom" constant="20" id="ON3-qN-4jM"/>
                                     <constraint firstItem="f6Q-ee-Xn3" firstAttribute="baseline" secondItem="FSF-Es-YVZ" secondAttribute="baseline" id="OkG-Gv-u0o"/>
+                                    <constraint firstItem="dU3-om-KyM" firstAttribute="width" secondItem="D0W-WB-7Vk" secondAttribute="width" id="PJG-a6-vAK"/>
+                                    <constraint firstAttribute="trailing" secondItem="QpQ-ST-RHs" secondAttribute="trailing" id="QBD-73-ikX"/>
                                     <constraint firstItem="O9Z-Om-IYr" firstAttribute="top" secondItem="OrM-Fa-8UT" secondAttribute="bottom" constant="20" id="R3O-QY-TbL"/>
                                     <constraint firstItem="dU3-om-KyM" firstAttribute="top" secondItem="2Aw-S0-CGP" secondAttribute="bottom" constant="26" id="S57-ZH-Yy6"/>
                                     <constraint firstItem="OrM-Fa-8UT" firstAttribute="leading" secondItem="D0W-WB-7Vk" secondAttribute="leading" constant="21" id="WpA-fL-fe3"/>
                                     <constraint firstAttribute="bottom" secondItem="s75-i8-upf" secondAttribute="bottom" constant="16" id="Y13-n8-vPp"/>
                                     <constraint firstItem="2Aw-S0-CGP" firstAttribute="centerX" secondItem="D0W-WB-7Vk" secondAttribute="centerX" id="YOt-1c-aaK"/>
                                     <constraint firstAttribute="trailing" secondItem="zlq-X4-E3l" secondAttribute="trailing" constant="8" id="c9c-b5-7Pz"/>
+                                    <constraint firstItem="OiX-nb-Oed" firstAttribute="leading" secondItem="D0W-WB-7Vk" secondAttribute="leading" id="cgY-oa-d1K"/>
+                                    <constraint firstItem="QpQ-ST-RHs" firstAttribute="leading" secondItem="D0W-WB-7Vk" secondAttribute="leading" id="dir-4L-1By"/>
                                     <constraint firstItem="s75-i8-upf" firstAttribute="top" secondItem="TvY-sx-b8r" secondAttribute="bottom" constant="14" id="h1l-en-sBW"/>
                                     <constraint firstItem="s75-i8-upf" firstAttribute="leading" secondItem="TvY-sx-b8r" secondAttribute="leading" id="kvz-ds-6Bk"/>
                                     <constraint firstItem="dU3-om-KyM" firstAttribute="leading" secondItem="D0W-WB-7Vk" secondAttribute="leading" id="mq1-f0-ahl"/>
+                                    <constraint firstAttribute="trailing" secondItem="eo4-bU-cGz" secondAttribute="trailing" constant="8" id="mtO-XD-nvq"/>
                                     <constraint firstItem="TvY-sx-b8r" firstAttribute="leading" secondItem="FSF-Es-YVZ" secondAttribute="leading" id="sS9-kg-pRy"/>
                                     <constraint firstItem="s75-i8-upf" firstAttribute="trailing" secondItem="f6Q-ee-Xn3" secondAttribute="trailing" id="vdk-uf-c96"/>
                                     <constraint firstItem="f6Q-ee-Xn3" firstAttribute="trailing" secondItem="zlq-X4-E3l" secondAttribute="trailing" id="yNM-oe-rl9"/>
                                     <constraint firstItem="TvY-sx-b8r" firstAttribute="top" secondItem="FSF-Es-YVZ" secondAttribute="bottom" constant="35" id="yuE-EJ-fBy"/>
+                                    <constraint firstItem="OiX-nb-Oed" firstAttribute="top" secondItem="eo4-bU-cGz" secondAttribute="bottom" constant="8" id="zyw-Jn-kwJ"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="D0W-WB-7Vk" firstAttribute="top" secondItem="V6t-AB-HeI" secondAttribute="topMargin" id="DJ0-I6-MYx"/>
-                            <constraint firstItem="dU3-om-KyM" firstAttribute="width" secondItem="V6t-AB-HeI" secondAttribute="width" id="NjG-k5-7Jc"/>
                             <constraint firstItem="Qk3-DC-d7A" firstAttribute="top" secondItem="D0W-WB-7Vk" secondAttribute="bottom" id="WLD-Zc-KKp"/>
                             <constraint firstItem="D0W-WB-7Vk" firstAttribute="leading" secondItem="V6t-AB-HeI" secondAttribute="leading" id="qmZ-nw-LcV"/>
                             <constraint firstAttribute="trailing" secondItem="D0W-WB-7Vk" secondAttribute="trailing" id="tkW-Dp-WED"/>
@@ -273,6 +302,7 @@ The hotel provides an internet point, and a Wi-Fi service is available for an ad
                         <outlet property="hotelNameLabel" destination="2Aw-S0-CGP" id="Io7-xS-ZXI"/>
                         <outlet property="hotelRatingLabel" destination="zlq-X4-E3l" id="H6o-4y-SBn"/>
                         <outlet property="hotelSuitesLabel" destination="f6Q-ee-Xn3" id="UwU-4R-Aio"/>
+                        <outlet property="imageLoadingActivityIndicator" destination="eo4-bU-cGz" id="7X6-vs-tKc"/>
                         <outlet property="scrollView" destination="D0W-WB-7Vk" id="fFe-2i-QWY"/>
                     </connections>
                 </viewController>
@@ -281,4 +311,7 @@ The hotel provides an internet point, and a Wi-Fi service is available for an ad
             <point key="canvasLocation" x="946" y="176"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="placeholder" width="640" height="400"/>
+    </resources>
 </document>

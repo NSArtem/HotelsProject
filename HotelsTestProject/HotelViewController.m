@@ -9,6 +9,7 @@
 #import "RequestOperationManager.h"
 #import "APIRequest+Factory.h"
 #import "NSString+Rating.h"
+#import "NSNumber+FormattedDistance.h"
 
 @interface HotelViewController()
 
@@ -67,7 +68,7 @@
     self.hotelAddressLabel.text = hotel.hotelAddress.length ? hotel.hotelAddress : @"—";
     self.hotelRatingLabel.text = [NSString ratingForNumber:hotel.hotelStars];
     self.hotelSuitesLabel.text = hotel.suitesAvailable.length ? hotel.suitesAvailable : @"No suites available";
-    self.hotelDistanceLabel.text = hotel.distance ? [NSString stringWithFormat:@"%@ km", hotel.distance] : @"";
+    self.hotelDistanceLabel.text = hotel.distance ? [NSString stringWithFormat:@"%@ km", hotel.distance.formattedDistance] : @"";
 }
 
 

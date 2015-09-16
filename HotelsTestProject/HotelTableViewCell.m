@@ -9,6 +9,7 @@
 #import "HotelTableViewCell.h"
 #import "Hotel.h"
 #import "NSString+Rating.h"
+#import "NSNumber+FormattedDistance.h"
 
 @interface HotelTableViewCell()
 
@@ -27,7 +28,7 @@
     self.hotelNameLabel.text = hotel.hotelName.length ? hotel.hotelName : @"—";
     self.hotelAddressLabel.text = hotel.hotelAddress.length ? hotel.hotelAddress : @"—";
     self.hotelStarsLabel.text = [NSString ratingForNumber:hotel.hotelStars];
-    self.hotelDistanceLabel.text = hotel.distance ? [NSString stringWithFormat:@"%@ km", hotel.distance] : @"";
+    self.hotelDistanceLabel.text = hotel.distance ? [NSString stringWithFormat:@"%@ km", [hotel.distance formattedDistance]] : @"";
     self.availableSuitesLabel.text = hotel.suitesAvailable.length ? hotel.suitesAvailable : @"No suites available";
 }
 

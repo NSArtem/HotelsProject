@@ -12,7 +12,12 @@
 #import "HotelTableViewCell.h"
 #import "HotelViewController.h"
 
-@interface HotelsViewController ()<UITableViewDataSource, UITableViewDelegate>
+typedef NS_ENUM(NSInteger, SortOrder) {
+    ByDistance,
+    BySuitesAvailable
+};
+
+@interface HotelsViewController ()<UITableViewDataSource, UITableViewDelegate, UIActionSheetDelegate>
 
 @property(nonatomic, retain) AFHTTPRequestOperation *operation;
 @property(nonatomic, copy) NSArray *hotels;
@@ -70,7 +75,43 @@
 
 
 - (IBAction)sortButtonPressed:(id)sender {
-    //TODO: implement sorting
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Sort"
+                                                                   message:nil
+                                                            preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertAction *sortByDistance = [UIAlertAction actionWithTitle:@"By distance"
+                                                             style:UIAlertActionStyleDefault
+                                                           handler:^(UIAlertAction * action) {
+                                                              [self sortDataByOrder:ByDistance];
+                                                          }];
+    [alert addAction:sortByDistance];
+
+    UIAlertAction *sortBySuitesAvailable = [UIAlertAction actionWithTitle:@"By suites available"
+                                                                    style:UIAlertActionStyleDefault
+                                                                  handler:^(UIAlertAction *action) {
+                                                                     [self sortDataByOrder:BySuitesAvailable];
+                                                                  }];
+    [alert addAction:sortBySuitesAvailable];
+
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel"
+                                                           style:UIAlertActionStyleCancel
+                                                         handler:nil];
+    [alert addAction:cancelAction];
+
+    [self presentViewController:alert animated:YES completion:nil];
 }
+
+- (void)sortDataByOrder:(SortOrder)sortOrder
+{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+       NSSortDescriptor *sortDescriptor;
+        NSArray *sortedArray;
+        //sort
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.hotels = sortedArray;
+            [self.tableView reloadData];
+        });
+    });
+}
+
 
 @end

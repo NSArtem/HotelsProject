@@ -126,6 +126,7 @@ typedef NS_ENUM(NSInteger, SortOrder) {
             self.hotels = sortedArray;
             [self.tableView reloadData];
             [self showLoadingIndicator:NO];
+            [self.tableView setContentOffset:CGPointMake(0, -self.tableView.contentInset.top) animated:YES];
         });
     });
 }

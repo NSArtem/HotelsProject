@@ -23,6 +23,8 @@
     self.activityIndicatorView = activityIndicatorView;
 
     UILabel *errorMessage = [[UILabel alloc] init];
+    errorMessage.textAlignment = NSTextAlignmentCenter;
+    errorMessage.numberOfLines = 0;
     [self.view addSubview:errorMessage];
     self.errorMessage = errorMessage;
 }
@@ -30,7 +32,10 @@
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     self.activityIndicatorView.center = self.view.center;
-    [self.errorMessage sizeThatFits:self.view.bounds.size];
+    self.errorMessage.frame =  [self.errorMessage.text boundingRectWithSize:CGSizeMake(CGRectGetWidth(self.view.frame) - 20.0f, CGFLOAT_MAX)
+                                                                        options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading)
+                                                                    attributes:@{NSFontAttributeName: self.errorMessage.font}
+                                                                        context:nil];
     self.errorMessage.center = self.view.center;
 }
 
@@ -51,7 +56,7 @@
     self.contentView.hidden = isShown;
     if (message.length) {
         self.errorMessage.text = message;
-        [self.errorMessage sizeToFit];
+
         [self.view setNeedsLayout];
     }
 }

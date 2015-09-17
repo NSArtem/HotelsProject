@@ -21,7 +21,7 @@
 @property (nonatomic, copy, readonly) NSNumber *latitude;
 @property (nonatomic, copy, readonly) NSNumber *longitude;
 @property (nonatomic, strong) CLLocation *location;
-
+@property (nonatomic, strong) NSArray *suites;
 //Response example:
 //{
 //    "id": 40611,

@@ -4,6 +4,7 @@
 //
 
 #import "Hotel.h"
+#import "MTLValueTransformer.h"
 
 @implementation Hotel
 
@@ -16,6 +17,7 @@
                 NSStringFromSelector(@selector(imageURLPath)): @"image",
                 NSStringFromSelector(@selector(latitude)): @"lat",
                 NSStringFromSelector(@selector(longitude)): @"lon",
+                NSStringFromSelector(@selector(suites)): @"suites_availability",
                 NSStringFromSelector(@selector(suitesAvailable)): @"suites_availability" };
 }
 
@@ -23,6 +25,13 @@
 {
     return [[CLLocation alloc] initWithLatitude:(CLLocationDegrees)[self.latitude doubleValue]
                                       longitude:(CLLocationDegrees)[self.longitude doubleValue]];
+}
+
++ (NSValueTransformer *)suitesJSONTransformer
+{
+    return [MTLValueTransformer transformerUsingForwardBlock:^id(NSString *suites, BOOL *success, NSError **error) {
+        return [suites componentsSeparatedByString:@":"];
+    }];
 }
 
 @end

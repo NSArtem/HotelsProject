@@ -102,13 +102,27 @@ typedef NS_ENUM(NSInteger, SortOrder) {
 
 - (void)sortDataByOrder:(SortOrder)sortOrder
 {
+    [self showLoadingIndicator:YES];
+    NSArray *hotels = self.hotels;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-       NSSortDescriptor *sortDescriptor;
-        NSArray *sortedArray;
-        //sort
+        NSSortDescriptor *sortDescriptor;
+        switch (sortOrder) {
+            case BySuitesAvailable: {
+                sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"suites.@count" ascending:NO];
+                break;
+            }
+            case ByDistance: {
+                sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"distance" ascending:YES];
+                break;
+            }
+        }
+
+        NSArray *sortedArray = [hotels sortedArrayUsingDescriptors:@[sortDescriptor]];
+
         dispatch_async(dispatch_get_main_queue(), ^{
             self.hotels = sortedArray;
             [self.tableView reloadData];
+            [self showLoadingIndicator:NO];
         });
     });
 }

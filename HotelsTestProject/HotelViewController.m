@@ -3,6 +3,7 @@
 // Copyright (c) 2015 Artem Abramov. All rights reserved.
 //
 
+@import MapKit;
 #import <AFNetworking/AFHTTPRequestOperation.h>
 #import "HotelViewController.h"
 #import "Hotel.h"
@@ -71,5 +72,14 @@
     self.hotelDistanceLabel.text = hotel.distance ? [NSString stringWithFormat:@"%@ km", hotel.distance.formattedDistance] : @"";
 }
 
+- (IBAction)openMapButtonPressed:(id)sender
+{
+    CLLocationCoordinate2D coordinate = self.hotel.location.coordinate;
+    MKPlacemark *placemark = [[MKPlacemark alloc] initWithCoordinate:coordinate
+                                                       addressDictionary:nil];
+    MKMapItem *mapItem = [[MKMapItem alloc] initWithPlacemark:placemark];
+    mapItem.name = self.hotel.hotelName;
+    [mapItem openInMapsWithLaunchOptions:nil];
+}
 
 @end

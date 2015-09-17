@@ -14,7 +14,15 @@
                 NSStringFromSelector(@selector(hotelStars)): @"stars",
                 NSStringFromSelector(@selector(distance)): @"distance",
                 NSStringFromSelector(@selector(imageURLPath)): @"image",
+                NSStringFromSelector(@selector(latitude)): @"lat",
+                NSStringFromSelector(@selector(longitude)): @"lon",
                 NSStringFromSelector(@selector(suitesAvailable)): @"suites_availability" };
+}
+
+- (CLLocation *)location
+{
+    return [[CLLocation alloc] initWithLatitude:(CLLocationDegrees)[self.latitude doubleValue]
+                                      longitude:(CLLocationDegrees)[self.longitude doubleValue]];
 }
 
 @end

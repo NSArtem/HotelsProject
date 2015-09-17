@@ -18,6 +18,8 @@
 @property (nonatomic, strong) NSNumber *distance;
 @property (nonatomic, copy) NSString *suitesAvailable; //TODO: Map to NSSet of suites
 @property (nonatomic, copy) NSString *imageURLPath;
+@property (nonatomic, copy, readonly) NSNumber *latitude;
+@property (nonatomic, copy, readonly) NSNumber *longitude;
 @property (nonatomic, strong) CLLocation *location;
 
 //Response example:

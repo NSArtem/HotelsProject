@@ -75,6 +75,9 @@ typedef NS_ENUM(NSInteger, SortOrder) {
 
 
 - (IBAction)sortButtonPressed:(id)sender {
+    if (!self.isLoaded)
+        return;
+    
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Sort"
                                                                    message:nil
                                                             preferredStyle:UIAlertControllerStyleActionSheet];

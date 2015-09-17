@@ -14,6 +14,7 @@
 		58C7A74914DE3FBFD8FB5AE4 /* NSString+Rating.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C7A8D80E1075EAB58EF313 /* NSString+Rating.m */; };
 		58C7A749F813279FCE23596D /* NSNumber+FormattedDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C7AC161B7B5A2FB0625C83 /* NSNumber+FormattedDistance.m */; };
 		58C7A7BEFBA039699A07EDDB /* APIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C7A0FF95349184C49506C7 /* APIRequest.m */; };
+		58C7A9278CDBE0F45B8741A0 /* APIImageResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C7A9849DD428AE62C41B8A /* APIImageResponseSerializer.m */; };
 		58C7AABE047BEE964B69A185 /* APIResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C7A5FBB4B43E68BFD090B6 /* APIResponseSerializer.m */; };
 		AC6F09561BA94FED00431736 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6F09551BA94FED00431736 /* main.m */; };
 		AC6F09591BA94FED00431736 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6F09581BA94FED00431736 /* AppDelegate.m */; };
@@ -37,8 +38,10 @@
 		58C7A65CD0B86373AB5ADBCD /* APIRequest+Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "APIRequest+Factory.h"; sourceTree = "<group>"; };
 		58C7A79169BBCC3DE21B5965 /* HotelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelViewController.m; sourceTree = "<group>"; };
 		58C7A7AB754A812B7FA4CBA7 /* NSNumber+FormattedDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+FormattedDistance.h"; sourceTree = "<group>"; };
+		58C7A84D5B918D0154E8DCA4 /* APIImageResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIImageResponseSerializer.h; sourceTree = "<group>"; };
 		58C7A88204BAC1F9392A08BA /* Hotel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hotel.h; sourceTree = "<group>"; };
 		58C7A8D80E1075EAB58EF313 /* NSString+Rating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Rating.m"; sourceTree = "<group>"; };
+		58C7A9849DD428AE62C41B8A /* APIImageResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIImageResponseSerializer.m; sourceTree = "<group>"; };
 		58C7AAF485D7F5C2A29A6728 /* LoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
 		58C7AC161B7B5A2FB0625C83 /* NSNumber+FormattedDistance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+FormattedDistance.m"; sourceTree = "<group>"; };
 		58C7AEC9DD1FEFCBCACD6905 /* APIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIRequest.h; sourceTree = "<group>"; };
@@ -196,6 +199,8 @@
 				58C7AF58AD4039FF9FDCB398 /* APIResponseSerializer.h */,
 				58C7A05EABA1C0B175E2ABEA /* APIRequest+Factory.m */,
 				58C7A65CD0B86373AB5ADBCD /* APIRequest+Factory.h */,
+				58C7A9849DD428AE62C41B8A /* APIImageResponseSerializer.m */,
+				58C7A84D5B918D0154E8DCA4 /* APIImageResponseSerializer.h */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -328,6 +333,7 @@
 				58C7A310C2DEE8FC4837C09F /* LoadingViewController.m in Sources */,
 				58C7A74914DE3FBFD8FB5AE4 /* NSString+Rating.m in Sources */,
 				58C7A749F813279FCE23596D /* NSNumber+FormattedDistance.m in Sources */,
+				58C7A9278CDBE0F45B8741A0 /* APIImageResponseSerializer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

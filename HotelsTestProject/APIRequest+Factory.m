@@ -36,6 +36,7 @@
                                           responseClass:nil
                                                  method:@"GET"];
     request.requestType = Image;
+    request.cropImage = YES;
     return request;
 }
 

@@ -17,6 +17,7 @@ typedef NS_ENUM(NSInteger, RequestType) {
 @property (nonatomic, strong) Class responseClass;
 @property (nonatomic, copy) NSString *method;
 @property (nonatomic, assign) RequestType requestType;
+@property (nonatomic, assign) BOOL cropImage;
 
 - (instancetype)initWithResourceName:(NSString *)resourceName responseClass:(Class)responseClass method:(NSString *)method;
 + (instancetype)requestWithResourceName:(NSString *)resourceName responseClass:(Class)responseClass method:(NSString *)method;

@@ -9,6 +9,7 @@
 #import "RequestOperationManager.h"
 #import "APIRequest.h"
 #import "APIResponseSerializer.h"
+#import "APIImageResponseSerializer.h"
 
 static NSString * const kBaseURL = @"https://dl.dropboxusercontent.com";
 
@@ -67,7 +68,7 @@ static NSString * const kBaseURL = @"https://dl.dropboxusercontent.com";
             break;
         }
         case Image: {
-            operation.responseSerializer = [AFImageResponseSerializer serializer];
+            operation.responseSerializer = request.cropImage ? [APIImageResponseSerializer serializer] : [AFImageResponseSerializer serializer];
             break;
         }
     }

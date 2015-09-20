@@ -11,7 +11,8 @@
 #import "APIResponseSerializer.h"
 #import "APIImageResponseSerializer.h"
 
-static NSString * const kBaseURL = @"https://dl.dropboxusercontent.com/u/109052005/1/";
+//static NSString * const kBaseURL = @"https://dl.dropboxusercontent.com/u/109052005/1/"; //initial
+static NSString * const kBaseURL = @"https://raw.githubusercontent.com/NSArtem/HotelsProject/master/JSON/";
 
 @interface RequestOperationManager()
 

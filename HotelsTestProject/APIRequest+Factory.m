@@ -9,7 +9,7 @@
 @implementation APIRequest (Factory)
 
 + (instancetype)requestOfHotelsList {
-    return [self requestWithResourceName:@"0777.json"
+    return [self requestWithResourceName:@"hotelsList.json"
                            responseClass:[Hotel class]
                                   method:@"GET"];
 }

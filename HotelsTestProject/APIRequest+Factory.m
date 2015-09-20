@@ -9,7 +9,7 @@
 @implementation APIRequest (Factory)
 
 + (instancetype)requestOfHotelsList {
-    return [self requestWithResourceName:@"u/109052005/1/0777.json"
+    return [self requestWithResourceName:@"0777.json"
                            responseClass:[Hotel class]
                                   method:@"GET"];
 }
@@ -20,7 +20,7 @@
         return nil;
     }
 
-    NSString *path = [NSString stringWithFormat:@"u/109052005/1/%@.json", hotelID.stringValue];
+    NSString *path = [NSString stringWithFormat:@"%@.json", hotelID.stringValue];
     return [self requestWithResourceName:path
                            responseClass:[Hotel class]
                                   method:@"GET"];
@@ -31,7 +31,7 @@
         return nil;
     }
 
-    NSString *path = [NSString stringWithFormat:@"u/109052005/1/%@", imageURLPath];
+    NSString *path = [NSString stringWithFormat:@"%@", imageURLPath];
     APIRequest *request = [self requestWithResourceName:path
                                           responseClass:nil
                                                  method:@"GET"];

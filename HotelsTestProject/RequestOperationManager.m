@@ -11,7 +11,7 @@
 #import "APIResponseSerializer.h"
 #import "APIImageResponseSerializer.h"
 
-static NSString * const kBaseURL = @"https://dl.dropboxusercontent.com";
+static NSString * const kBaseURL = @"https://dl.dropboxusercontent.com/u/109052005/1/";
 
 @interface RequestOperationManager()
 
